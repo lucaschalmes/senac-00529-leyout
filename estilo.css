@@ -87,67 +87,67 @@ text-align: center;
 		background-color: green;
 	}
 	.label, .input,input[type=submit], input[type=reset]{
-		whidth:
+		whidth: 100%;
+		margin-top: 0;
 	}
 }
 /* CSS do form */
-/* para todos os inputs*/
+/* para todos os inputs */
 input{
 	color: purple;
 }
- /* Específico para alguns inputs*/
- input[type=text],input[type=email],input[type=tel], select, textarea{
-	 width: 100% ;
-	 padding: 12px;
-	 border: 1px solid #ccc;
-	 border-radius: 5px;
-	 resize: vertical;	  	 
- }
- 
- input[type=submit]{
-	 background-color: #4caf50;
-	 float: right;
-	 color: white;
-	 border-radius: 5px;
-	 border: none;
-	 cursor: pointer;
-	 padding: 12px 20px;
-	 margin: 5px;
- }
- input[type=submit]:hover{
-	 background-color: #45a049;  
- }
- 
- input[type=reset]{
-	 background-color: #af4c4c;
-	 float:right;
-	 color: white;
-	 border-radius: 5px;
-	 border: none;
-	 cuesor:pointer;
-	 padding: 12px 20px;
-	 margin: 5px;
- }
- input[type=reset]:hover{
-	 background-color: #eb6767;
- }
- 
- .row:after{
-	 content: "";
-	 display: table;
-	 clear: both;
- }
- 
- .label{
-	 float: left;
-	 width: 25%;
-	 margin-top: 6px;
- }
- 
- .input{
-	 float: left;
-	 whidth: 75%;
-	 margin-top: 6px;
- }
-
+/* Específico para alguns inputs*/
+input[type=text], input[type=email], input[type=tel], select, textarea{
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	resize: vertical;
 }
+
+input[type=submit]{
+	background-color: #4caf50;
+	float: right;
+	color: white;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	padding: 12px 20px;
+	margin: 5px;
+}
+input[type=submit]:hover{
+	background-color: #45a049;
+}
+
+input[type=reset]{
+	background-color: #af4c4c;
+	float: right;
+	color: white;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	padding: 12px 20px;
+	margin: 5px;
+}
+input[type=reset]:hover{
+	background-color: #eb6767;
+}
+
+.row:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.label{
+	float: left;
+	width: 25%;
+	margin-top: 6px;
+}
+
+.input{
+	float: left;
+	width: 75%;
+	margin-top: 6px;
+}
+
