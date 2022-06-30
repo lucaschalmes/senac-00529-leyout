@@ -7,6 +7,7 @@ function validar(){
 	var cpf = formUser.cpf.value;
 	var cnpj = formUser.cnpj.value;
 	var senha = formUser.senha.value;
+	var confirmEsenha = formUser.senha.value;
 	
 	
 	if(nome == "" || nome.length <=3){
@@ -64,6 +65,14 @@ function validar(){
 		formUser.senha.focus();
 		return false;
 	}
+	
+	if(confirmEsenha != senha){
+		alert("Senha não corresponde!");
+		formUser.confirmEsenha.focus();
+		return false;
+		
+	}
+		
 }
 
 function mascaraCPF(i){
@@ -99,5 +108,15 @@ function mascaraCNPJ(i){
 	if (v.length == 1) i.value ="(" +i.value;
 	if (v.length == 3) i.value +=")";
 	if (v.length == 15) i.value +="-";
+}
+
+function lerImg () {
+	if(this.files && this.files[0]){
+		var file = new FileReader();
+		file.onload = function(e){
+			document.getElementById("preview").src= e.target.result;
+		}
+			file.readAsDataURL(this.files[0]);
+	}
 }
 	
